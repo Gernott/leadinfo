@@ -18,10 +18,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'integrations@leadinfo.com',
     'state' => 'stable',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.2',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-11.9.99',
+            'typo3' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
