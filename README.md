@@ -9,3 +9,9 @@ Once you have entered the Leadinfo Site ID the Leadinfo tracking code is automat
 # Links
 - Contact: https://leadinfo.com/en/contact
 - Help Centre: https://help.leadinfo.com
+
+# Content Security Policy
+The tracking snippet dynamically inserts a `<script>` element that loads
+`https://cdn.leadinfo.net/ping.js`. If you run a strict Content Security Policy,
+allow `https://cdn.leadinfo.net` in your `script-src` (and `connect-src`)
+directives. The inline snippet itself is rendered with a CSP nonce automatically.

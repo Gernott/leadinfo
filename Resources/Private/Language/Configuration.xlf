@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<xliff version="1.0">
-    <file source-language="en" date="2021-09-01T13:17:54+01:00">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:leadinfo/Resources/Private/Language/Configuration.xlf" date="2021-09-01T13:17:54Z" product-name="leadinfo">
+        <header/>
         <body>
             <trans-unit id="site.configuration.leadinfo_id">
                 <source>Leadinfo Site ID</source>
             </trans-unit>
-			<trans-unit id="site.configuration.leadinfo_placeholder">
+            <trans-unit id="site.configuration.leadinfo_id.description">
+                <source>Your Leadinfo Site ID, which you can find and copy within Leadinfo. Leave empty to disable tracking for this site.</source>
+            </trans-unit>
+            <trans-unit id="site.configuration.leadinfo_placeholder">
                 <source>LI-123456789</source>
             </trans-unit>
             <trans-unit id="site.configuration.tab">
