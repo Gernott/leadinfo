@@ -1,13 +1,19 @@
 <?php
+
+declare(strict_types=1);
+
+defined('TYPO3') or die();
+
 call_user_func(
-    function ($table) {
-        // echo "<pre>";
-        // var_dump($GLOBALS['SiteConfiguration'][$table]['columns']);
+    function (string $table): void {
         $lll = 'LLL:EXT:leadinfo/Resources/Private/Language/Configuration.xlf:';
         $GLOBALS['SiteConfiguration'][$table]['columns']['leadinfo_id'] = [
             'label' => $lll . 'site.configuration.leadinfo_id',
+            'description' => $lll . 'site.configuration.leadinfo_id.description',
             'config' => [
                 'type' => 'input',
+                'eval' => 'trim',
+                'default' => '',
                 'placeholder' => $lll . 'site.configuration.leadinfo_placeholder',
             ],
         ];
