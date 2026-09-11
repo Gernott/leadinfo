@@ -57,7 +57,7 @@ final class LeadinfoTrackingCode
             self::ASSET_IDENTIFIER,
             $this->getTrackingCode($leadinfoId),
             [],
-            ['priority' => true, 'useNonce' => true]
+            ['priority' => true, 'csp' => true]
         );
     }
 
